@@ -1,0 +1,78 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  width: fit-content;
+
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  padding: 0.25rem 0.65rem;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+.default {
+  border-color: var(--color-border);
+  background: var(--color-surface-soft);
+  color: var(--color-text);
+}
+
+.success {
+  border-color: color-mix(in srgb, var(--color-success) 35%, transparent);
+  background: color-mix(in srgb, var(--color-success) 14%, transparent);
+  color: var(--color-success);
+}
+
+.danger {
+  border-color: color-mix(in srgb, var(--color-danger) 35%, transparent);
+  background: color-mix(in srgb, var(--color-danger) 14%, transparent);
+  color: var(--color-danger);
+}
+
+.warning {
+  border-color: color-mix(in srgb, var(--color-warning) 35%, transparent);
+  background: color-mix(in srgb, var(--color-warning) 14%, transparent);
+  color: var(--color-warning);
+}
+
+.info {
+  border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.muted {
+  border-color: var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+}
+
+.loading {
+  border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.spinner {
+  width: 0.7rem;
+  height: 0.7rem;
+
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 999px;
+
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

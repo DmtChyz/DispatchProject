@@ -1,0 +1,163 @@
+.content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.emptyState {
+  min-height: 13rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+
+  padding: 1.5rem;
+
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface-soft);
+  color: var(--color-text-muted);
+
+  text-align: center;
+}
+
+.emptyState p {
+  max-width: 18rem;
+  margin: 0;
+
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.emptyIndicator {
+  width: 3rem;
+  height: 3rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      var(--color-primary) 0 18%,
+      transparent 20%
+    ),
+    var(--color-primary-soft);
+}
+
+.statusBox {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface-soft);
+}
+
+.statusIndicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+}
+
+.queued {
+  background: var(--color-warning);
+  box-shadow:
+    0 0 0 5px
+    color-mix(
+      in srgb,
+      var(--color-warning) 14%,
+      transparent
+    );
+}
+
+.processing {
+  background: var(--color-primary);
+  box-shadow: 0 0 0 5px var(--color-primary-soft);
+}
+
+.sent {
+  background: var(--color-success);
+  box-shadow:
+    0 0 0 5px
+    color-mix(
+      in srgb,
+      var(--color-success) 14%,
+      transparent
+    );
+}
+
+.failed {
+  background: var(--color-danger);
+  box-shadow:
+    0 0 0 5px
+    color-mix(
+      in srgb,
+      var(--color-danger) 14%,
+      transparent
+    );
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.2rem;
+
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.statusText {
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.responseMessage {
+  margin: 0;
+
+  color: var(--color-text-muted);
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.details {
+  display: grid;
+  gap: 1rem;
+
+  margin: 0;
+}
+
+.detail {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.detail dt {
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.detail dd {
+  min-width: 0;
+  margin: 0;
+
+  overflow-wrap: anywhere;
+
+  color: var(--color-text);
+  font-family: monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}

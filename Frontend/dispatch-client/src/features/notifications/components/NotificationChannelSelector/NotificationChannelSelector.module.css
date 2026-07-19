@@ -1,0 +1,115 @@
+.fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.legend {
+  margin-bottom: 0.6rem;
+
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.option {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  min-height: 4.25rem;
+  padding: 0.85rem 1rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface-soft);
+  color: var(--color-text-muted);
+
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.option:hover {
+  color: var(--color-text);
+  border-color: color-mix(
+    in srgb,
+    var(--color-primary) 45%,
+    var(--color-border)
+  );
+  transform: translateY(-1px);
+}
+
+.selected {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+}
+
+.input:focus-visible + .icon {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.icon {
+  width: 1.45rem;
+  height: 1.45rem;
+  flex: 0 0 auto;
+
+  background: currentColor;
+
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.mailIcon {
+  mask-image: url("/icons/mail.svg");
+}
+
+.letterIcon {
+  mask-image: url("/icons/letter.svg");
+}
+
+.optionLabel {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.error {
+  margin: 0.5rem 0 0;
+
+  color: var(--color-danger);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 520px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+}

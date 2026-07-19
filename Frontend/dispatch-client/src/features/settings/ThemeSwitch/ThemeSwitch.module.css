@@ -1,0 +1,45 @@
+.switch {
+  width: 2.6rem;
+  height: 2.6rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  background: var(--color-surface-soft);
+
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.switch:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.switch:active {
+  transform: translateY(0);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+}
+
+/* Force any dark/black SVG to become white */
+.darkIcon {
+  filter: brightness(0) invert(1);
+}
+
+/* Force any SVG to become black */
+.lightIcon {
+  filter: brightness(0) invert(0);
+}
