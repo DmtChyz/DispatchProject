@@ -1,3 +1,71 @@
+![All unit tests passing](Images/unit-tests.jpg)
+
+## Screenshots
+
+### Main page — English, dark theme
+
+![Main page English dark theme](Images/main-page-black-en.jpg)
+
+### Main page — Ukrainian, dark theme
+
+![Main page Ukrainian dark theme](Images/main-page-black-ua.jpg)
+
+### Main page — Ukrainian, light theme
+
+![Main page Ukrainian light theme](Images/main-page-white-ua.jpg)
+
+### Registration modal
+
+![Registration modal](Images/main-page-onRegister.jpg)
+
+### Login modal — Ukrainian
+
+![Login modal Ukrainian](Images/login-component-ua.jpg)
+
+### Registration validation — English
+
+![Registration validation English](Images/register-component-error.jpg)
+
+### Registration validation — Ukrainian
+
+![Registration validation Ukrainian](Images/register-component-error-ua.jpg)
+
+### Dashboard
+
+![Notification dashboard](Images/dashboard-page.jpg)
+
+### Email queued
+
+![Email queued](Images/email-queued.jpg)
+
+### Email sent
+
+![Email sent](Images/email-send.jpg)
+
+### Received email
+
+![Received email](Images/email-check.jpg)
+
+### SMS before sending
+
+![SMS before sending](Images/sms-before-sending.jpg)
+
+### SMS sent
+
+![SMS sent](Images/sms-sent.jpg)
+
+### Received SMS
+
+![Received SMS](Images/sms-check.jpg)
+
+### Failed notification — dark theme
+
+![Failed notification dark theme](Images/black-failed.jpg)
+
+### Failed notification — light theme
+
+![Failed notification light theme](Images/white-failed.jpg)
+
 # DispatchProject
 
 Full-stack notification system built with ASP.NET Core microservices and React.
@@ -429,74 +497,6 @@ Run the test suite:
 cd Backend
 dotnet test
 ```
-
-![All unit tests passing](Images/unit-tests.jpg)
-
-## Screenshots
-
-### Main page — English, dark theme
-
-![Main page English dark theme](Images/main-page-black-en.jpg)
-
-### Main page — Ukrainian, dark theme
-
-![Main page Ukrainian dark theme](Images/main-page-black-ua.jpg)
-
-### Main page — Ukrainian, light theme
-
-![Main page Ukrainian light theme](Images/main-page-white-ua.jpg)
-
-### Registration modal
-
-![Registration modal](Images/main-page-onRegister.jpg)
-
-### Login modal — Ukrainian
-
-![Login modal Ukrainian](Images/login-component-ua.jpg)
-
-### Registration validation — English
-
-![Registration validation English](Images/register-component-error.jpg)
-
-### Registration validation — Ukrainian
-
-![Registration validation Ukrainian](Images/register-component-error-ua.jpg)
-
-### Dashboard
-
-![Notification dashboard](Images/dashboard-page.jpg)
-
-### Email queued
-
-![Email queued](Images/email-queued.jpg)
-
-### Email sent
-
-![Email sent](Images/email-send.jpg)
-
-### Received email
-
-![Received email](Images/email-check.jpg)
-
-### SMS before sending
-
-![SMS before sending](Images/sms-before-sending.jpg)
-
-### SMS sent
-
-![SMS sent](Images/sms-sent.jpg)
-
-### Received SMS
-
-![Received SMS](Images/sms-check.jpg)
-
-### Failed notification — dark theme
-
-![Failed notification dark theme](Images/black-failed.jpg)
-
-### Failed notification — light theme
-
-![Failed notification light theme](Images/white-failed.jpg)
 
 ## Implemented concepts
 
